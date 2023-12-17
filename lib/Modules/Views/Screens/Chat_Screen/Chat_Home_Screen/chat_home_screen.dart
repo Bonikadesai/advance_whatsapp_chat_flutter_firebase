@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-import '../../../Globals/globals.dart';
-import '../../../Helpers/firebase_auth_helper.dart';
-import '../../../Helpers/firebase_cloud_firestore_helper.dart';
+import '../../../../Globals/globals.dart';
+import '../../Login_SignUP_Screen/Auth_Helper/firebase_auth_helper.dart';
+import '../Chating_Screen/Cloud_Firestore_Helper/firebase_cloud_firestore_helper.dart';
 
 class Chat_Home_Screen extends StatefulWidget {
   const Chat_Home_Screen({super.key});

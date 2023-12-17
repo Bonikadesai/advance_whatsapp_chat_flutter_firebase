@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-import '../utils/utils.dart';
-import 'firebase_cloud_firestore_helper.dart';
+import '../../../../utils/utils.dart';
+import '../../Chat_Screen/Chating_Screen/Cloud_Firestore_Helper/firebase_cloud_firestore_helper.dart';
 
 class Auth_Helper {
   Auth_Helper._();

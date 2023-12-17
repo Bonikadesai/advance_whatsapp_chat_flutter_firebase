@@ -1,23 +1,23 @@
 import 'dart:developer';
 
-import 'package:chat_app_flutter_app/Views/Components/Chat/chat_screen.dart';
-import 'package:chat_app_flutter_app/Views/Screens/intro_screen.dart';
-import 'package:chat_app_flutter_app/Views/Screens/login_screen.dart';
-import 'package:chat_app_flutter_app/Views/Screens/notification.dart';
-import 'package:chat_app_flutter_app/Views/Screens/setting_page.dart';
-import 'package:chat_app_flutter_app/Views/Screens/signup_screen.dart';
-import 'package:chat_app_flutter_app/Views/Screens/splesh_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'Views/Components/Chat/chat_home_screen.dart';
-import 'Views/Screens/home_page.dart';
-import 'Views/Screens/otp_verify.dart';
-import 'Views/Screens/phone_otp.dart';
-import 'Views/Screens/profile_page.dart';
+import 'Modules/Views/Screens/Chat_Screen/Chat_Home_Screen/chat_home_screen.dart';
+import 'Modules/Views/Screens/Chat_Screen/Chating_Screen/Views/chat_screen.dart';
+import 'Modules/Views/Screens/Home_Screen/Views/Home_Page/home_page.dart';
+import 'Modules/Views/Screens/Intro_Screen/intro_screen.dart';
+import 'Modules/Views/Screens/Login_SignUP_Screen/Views/Login_Screen/login_screen.dart';
+import 'Modules/Views/Screens/Login_SignUP_Screen/Views/SignUp_Screen/signup_screen.dart';
+import 'Modules/Views/Screens/Notification_Screen/Helper/Views/notification.dart';
+import 'Modules/Views/Screens/OTP_Screen/Send_OTP_Screen/phone_otp.dart';
+import 'Modules/Views/Screens/OTP_Screen/Verify_OTP_Screen/otp_verify.dart';
+import 'Modules/Views/Screens/Profile_Screen/profile_page.dart';
+import 'Modules/Views/Screens/Setting_Screen/setting_page.dart';
+import 'Modules/Views/Screens/Splesh_Screen/splesh_screen.dart';
 import 'firebase_options.dart';
 
 Future<void> FCMbackGroundMessage(RemoteMessage message) async {

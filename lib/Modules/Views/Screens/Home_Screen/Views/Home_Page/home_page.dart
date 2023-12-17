@@ -1,13 +1,13 @@
 import 'dart:io';
 
-import 'package:chat_app_flutter_app/Views/Screens/setting_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 
-import '../../Helpers/firebase_auth_helper.dart';
-import '../Components/Chat/chat_home_screen.dart';
+import '../../../Chat_Screen/Chat_Home_Screen/chat_home_screen.dart';
+import '../../../Login_SignUP_Screen/Auth_Helper/firebase_auth_helper.dart';
+import '../../../Setting_Screen/setting_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

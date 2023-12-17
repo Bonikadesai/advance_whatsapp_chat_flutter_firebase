@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import 'firebase_auth_helper.dart';
+import '../../../Login_SignUP_Screen/Auth_Helper/firebase_auth_helper.dart';
 
 class FireStore_Helper {
   //TODO: Private Constructor

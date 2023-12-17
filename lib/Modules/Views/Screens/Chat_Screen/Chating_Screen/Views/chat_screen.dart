@@ -1,13 +1,13 @@
-import 'package:chat_app_flutter_app/Helpers/notification_helper.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:searchbar_animation/searchbar_animation.dart';
 
-import '../../../Globals/globals.dart';
-import '../../../Helpers/firebase_auth_helper.dart';
-import '../../../Helpers/firebase_cloud_firestore_helper.dart';
+import '../../../../../Globals/globals.dart';
+import '../../../Login_SignUP_Screen/Auth_Helper/firebase_auth_helper.dart';
+import '../../../Notification_Screen/Helper/Notification_Helper/notification_helper.dart';
+import '../Cloud_Firestore_Helper/firebase_cloud_firestore_helper.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});

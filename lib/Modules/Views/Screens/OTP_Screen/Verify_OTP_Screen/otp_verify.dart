@@ -1,10 +1,11 @@
 import 'dart:developer';
 
-import 'package:chat_app_flutter_app/Views/Screens/phone_otp.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pinput/pinput.dart';
+
+import '../Send_OTP_Screen/phone_otp.dart';
 
 class VerifyOTPScreen extends StatefulWidget {
   const VerifyOTPScreen({super.key});
