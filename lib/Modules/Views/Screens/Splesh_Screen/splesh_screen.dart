@@ -3,14 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SpleshScreen extends StatefulWidget {
+class SpleshScreen extends StatelessWidget {
   const SpleshScreen({super.key});
 
-  @override
-  State<SpleshScreen> createState() => _SpleshScreenState();
-}
-
-class _SpleshScreenState extends State<SpleshScreen> {
   @override
   @override
   Widget build(BuildContext context) {

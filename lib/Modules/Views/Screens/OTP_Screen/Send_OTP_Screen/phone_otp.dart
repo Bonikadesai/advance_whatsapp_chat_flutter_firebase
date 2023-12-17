@@ -2,6 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../../utils/utils.dart';
+
 class PhoneOTPScreen extends StatefulWidget {
   const PhoneOTPScreen({super.key});
 
@@ -12,18 +14,11 @@ class PhoneOTPScreen extends StatefulWidget {
 }
 
 class _PhoneOTPScreenState extends State<PhoneOTPScreen> {
-  TextEditingController countryController = TextEditingController();
-  TextEditingController phoneController = TextEditingController();
-
   @override
   void initState() {
     countryController.text = "+91";
     super.initState();
   }
-
-  GlobalKey<FormState> otploginformkey = GlobalKey<FormState>();
-
-  String phonenumber = "";
 
   @override
   Widget build(BuildContext context) {

@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 
+import '../../../utils/utils.dart';
+
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
 
@@ -12,17 +14,6 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  GlobalKey<ScaffoldState> scaffoldkey = GlobalKey<ScaffoldState>();
-  TextEditingController namecontroller = TextEditingController();
-  TextEditingController phonecontroller = TextEditingController();
-  TextEditingController aboutcontroller = TextEditingController();
-  String name = "";
-  String phone = "";
-  String about = "";
-  File? imgFile;
-  final ImagePicker picker = ImagePicker();
-  File? xfile;
-  File? yfile;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

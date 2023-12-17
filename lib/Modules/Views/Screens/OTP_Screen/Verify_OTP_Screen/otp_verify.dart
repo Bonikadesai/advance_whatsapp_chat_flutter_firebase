@@ -5,19 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pinput/pinput.dart';
 
+import '../../../../utils/utils.dart';
 import '../Send_OTP_Screen/phone_otp.dart';
 
-class VerifyOTPScreen extends StatefulWidget {
+class VerifyOTPScreen extends StatelessWidget {
   const VerifyOTPScreen({super.key});
 
-  @override
-  State<VerifyOTPScreen> createState() => _VerifyOTPScreenState();
-}
-
-class _VerifyOTPScreenState extends State<VerifyOTPScreen> {
-  GlobalKey<FormState> otpverifyformkey = GlobalKey<FormState>();
-  var code = "";
-  final FirebaseAuth auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     final defaultPinTheme = PinTheme(

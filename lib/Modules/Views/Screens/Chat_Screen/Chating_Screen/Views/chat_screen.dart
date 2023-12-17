@@ -5,20 +5,13 @@ import 'package:get/get.dart';
 import 'package:searchbar_animation/searchbar_animation.dart';
 
 import '../../../../../Globals/globals.dart';
+import '../../../../../utils/utils.dart';
 import '../../../Login_SignUP_Screen/Auth_Helper/firebase_auth_helper.dart';
 import '../../../Notification_Screen/Helper/Notification_Helper/notification_helper.dart';
 import '../Cloud_Firestore_Helper/firebase_cloud_firestore_helper.dart';
 
-class ChatScreen extends StatefulWidget {
+class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
-
-  @override
-  State<ChatScreen> createState() => _ChatScreenState();
-}
-
-class _ChatScreenState extends State<ChatScreen> {
-  TextEditingController message_controller = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     List<String> data =
@@ -110,9 +103,9 @@ class _ChatScreenState extends State<ChatScreen> {
               ),
             ],
             onSelected: (more) {
-              setState(() {
-                more = more;
-              });
+              // setState(() {
+              //   more = more;
+              // });
               if (more == 6) {
                 // Drawer(
                 //   width: 300,

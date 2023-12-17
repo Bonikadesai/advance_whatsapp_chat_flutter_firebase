@@ -5,14 +5,9 @@ import 'package:get/get.dart';
 import '../../../../../utils/utils.dart';
 import '../../Auth_Helper/firebase_auth_helper.dart';
 
-class LoginScreen extends StatefulWidget {
+class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
-  @override
-  State<LoginScreen> createState() => _LoginScreenState();
-}
-
-class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -5,15 +5,8 @@ import '../../../../Globals/globals.dart';
 import '../../Login_SignUP_Screen/Auth_Helper/firebase_auth_helper.dart';
 import '../Chating_Screen/Cloud_Firestore_Helper/firebase_cloud_firestore_helper.dart';
 
-class Chat_Home_Screen extends StatefulWidget {
+class Chat_Home_Screen extends StatelessWidget {
   const Chat_Home_Screen({super.key});
-
-  @override
-  State<Chat_Home_Screen> createState() => _Chat_Home_ScreenState();
-}
-
-class _Chat_Home_ScreenState extends State<Chat_Home_Screen> {
-  TextEditingController message_controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
